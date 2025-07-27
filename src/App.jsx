@@ -1,10 +1,11 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
-import Skills from './components/skills.jsx'
-import Contact from './components/Contact'
+import TechStach from './components/TechStach'
 import Projects from './components/Projects.jsx'
-import ComingSoon from './components/ComingSoon.jsx'
+import Contact from './components/Contact'
+
+
 
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
       <Navbar/> 
       <Hero/>
       <AboutMe/>
-      <Skills/>
+      <TechStach/>
       <Projects/>
       <Contact/>
       

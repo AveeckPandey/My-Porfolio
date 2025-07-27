@@ -18,7 +18,7 @@ import {
 } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
 
-const Skills = () => {
+const TechStach = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
@@ -166,4 +166,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default TechStach;
