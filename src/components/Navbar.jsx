@@ -8,6 +8,21 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Smooth scrolling function
+  const smoothScrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+    // Close mobile menu if open
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="flex-1">
@@ -17,11 +32,11 @@ const Navbar = () => {
       {/* Desktop Navigation Links */}
       <div className="hidden md:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a href="#Hero" className="hover:text-gray-800">Home</a></li>
-          <li><a href="#About" className="hover:text-gray-800">About</a></li>
-          <li><a href="#Skills" className="hover:text-gray-800">Skills</a></li>
-          <li><a href="#Projects" className="hover:text-gray-800">Projects</a></li>
-          <li><a href="#Contact" className="hover:text-gray-800"><spans className='vibrate-1-normal'>Contact Me</spans></a></li>
+          <li><a onClick={() => smoothScrollTo('Hero')} className="hover:text-gray-800 cursor-pointer">Home</a></li>
+          <li><a onClick={() => smoothScrollTo('About')} className="hover:text-gray-800 cursor-pointer">About</a></li>
+          <li><a onClick={() => smoothScrollTo('Skills')} className="hover:text-gray-800 cursor-pointer">Skills</a></li>
+          <li><a onClick={() => smoothScrollTo('Projects')} className="hover:text-gray-800 cursor-pointer">Projects</a></li>
+          <li><a onClick={() => smoothScrollTo('Contact')} className="hover:text-gray-800 cursor-pointer">Contact Me</a></li>
         </ul>
       </div>
 
@@ -121,11 +136,11 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="menu p-4 overflow-y-auto">
-          <li><a href="#Hero" className="hover:text-gray-800" onClick={toggleMobileMenu}>Home</a></li>
-          <li><a href="#About" className="hover:text-gray-800" onClick={toggleMobileMenu}>About Me</a></li>
-          <li><a href="#Skills" className="hover:text-gray-800" onClick={toggleMobileMenu}>Skills</a></li>
-          <li><a href="#Projects" className="hover:text-gray-800" onClick={toggleMobileMenu}>Project</a></li>
-          <li><a href="#Contact" className="hover:text-gray-800" onClick={toggleMobileMenu}>Contact</a></li>
+          <li><a onClick={() => smoothScrollTo('Hero')} className="hover:text-gray-800 cursor-pointer">Home</a></li>
+          <li><a onClick={() => smoothScrollTo('About')} className="hover:text-gray-800 cursor-pointer">About Me</a></li>
+          <li><a onClick={() => smoothScrollTo('Skills')} className="hover:text-gray-800 cursor-pointer">Skills</a></li>
+          <li><a onClick={() => smoothScrollTo('Projects')} className="hover:text-gray-800 cursor-pointer">Project</a></li>
+          <li><a onClick={() => smoothScrollTo('Contact')} className="hover:text-gray-800 cursor-pointer">Contact</a></li>
        
           <li className="menu-title mt-4">Theme</li>
           <li>

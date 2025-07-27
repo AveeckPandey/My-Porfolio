@@ -23,10 +23,10 @@ const TechStach = () => {
     {
       title: "Programming Languages",
       skills: [
-        <span key="cpp" className="flex items-center gap-2 animate-float-subtle">C++</span>,
-        <span key="python" className="flex items-center gap-2 animate-float-subtle">Python <SiPython /></span>,
-        <span key="java" className="flex items-center gap-2 animate-float-subtle">Java (Basic) <FaJava /></span>,
-        <span key="sql" className="flex items-center gap-2 animate-float-subtle">SQL <DiMsqlServer/></span>
+        <span key="cpp" className="flex items-center gap-2">C++</span>,
+        <span key="python" className="flex items-center gap-2">Python <SiPython /></span>,
+        <span key="java" className="flex items-center gap-2">Java (Basic) <FaJava /></span>,
+        <span key="sql" className="flex items-center gap-2">SQL <DiMsqlServer/></span>
       ],
       gradient: "from-purple-400/20 to-pink-400/20",
       border: "border-purple-400/30",
@@ -36,15 +36,15 @@ const TechStach = () => {
       title: "Web Development", 
       skills: [
         <div key="web-skills" className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <span className="flex items-center gap-2 animate-float-subtle">React <SiReact/></span>
-          <span className="flex items-center gap-2 animate-float-subtle">Express.js <SiExpress/></span>
-          <span className="flex items-center gap-2 animate-float-subtle">Node.js <SiNodedotjs/></span>
-          <span className="flex items-center gap-2 animate-float-subtle">MongoDB <SiMongodb/></span>
-          <span className="flex items-center gap-2 animate-float-subtle">JavaScript <SiJavascript/></span>
-          <span className="flex items-center gap-2 animate-float-subtle">TypeScript <SiTypescript/></span>
-          <span className="flex items-center gap-2 animate-float-subtle">MySQL <SiMysql/></span>
-          <span className="flex items-center gap-2 animate-float-subtle">FastAPI <SiFastapi /></span>
-          <span className="flex items-center gap-2 animate-float-subtle">Flask <SiFlask/></span>
+          <span className="flex items-center gap-2">React <SiReact/></span>
+          <span className="flex items-center gap-2">Express.js <SiExpress/></span>
+          <span className="flex items-center gap-2">Node.js <SiNodedotjs/></span>
+          <span className="flex items-center gap-2">MongoDB <SiMongodb/></span>
+          <span className="flex items-center gap-2">JavaScript <SiJavascript/></span>
+          <span className="flex items-center gap-2">TypeScript <SiTypescript/></span>
+          <span className="flex items-center gap-2">MySQL <SiMysql/></span>
+          <span className="flex items-center gap-2">FastAPI <SiFastapi /></span>
+          <span className="flex items-center gap-2">Flask <SiFlask/></span>
         </div>
       ],
       gradient: "from-teal-400/20 to-cyan-400/20",
@@ -55,12 +55,12 @@ const TechStach = () => {
       title: "Data Science & Tools",
       skills: [
         <div key="web-skills" className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <span className='flex items-center gap-2 animate-float-subtle'>Numpy<SiNumpy/></span>
-          <span className='flex items-center gap-2 animate-float-subtle'>Pandas<SiPandas/></span>
-          <span className='flex items-center gap-2 animate-float-subtle'>Matplotlib</span>
-          <span className='flex items-center gap-2 animate-float-subtle'>Basic Data Analytics(PowerBi)  </span>
-          <span className='flex items-center gap-2 animate-float-subtle'>Apach Spark <SiApachespark/> </span>
-          <span className='flex items-center gap-2 animate-float-subtle'>
+          <span className='flex items-center gap-2'>Numpy<SiNumpy/></span>
+          <span className='flex items-center gap-2'>Pandas<SiPandas/></span>
+          <span className='flex items-center gap-2'>Matplotlib</span>
+          <span className='flex items-center gap-2'>Basic Data Analytics(PowerBi)  </span>
+          <span className='flex items-center gap-2'>Apach Spark <SiApachespark/> </span>
+          <span className='flex items-center gap-2'>
             Jupyter notebook <SiJupyter/> </span>
 
         </div>
@@ -73,10 +73,10 @@ const TechStach = () => {
       title: "Tools & Methodologies",
       skills: [
                 <div key="web-skills" className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <span className='flex items-center gap-2 animate-float-subtle'>Figma <FaFigma /> </span>
-          <span className='flex items-center gap-2 animate-float-subtle'>Docker<FaDocker/></span>
-          <span className='flex items-center gap-2 animate-float-subtle'>PostMan<SiPostman/></span>
-          <span className='flex items-center gap-2 animate-float-subtle'>Git & GitHUb <FaGithub /></span>
+          <span className='flex items-center gap-2'>Figma <FaFigma /> </span>
+          <span className='flex items-center gap-2'>Docker<FaDocker/></span>
+          <span className='flex items-center gap-2'>PostMan<SiPostman/></span>
+          <span className='flex items-center gap-2'>Git & GitHUb <FaGithub /></span>
 
 
         </div>
@@ -89,11 +89,10 @@ const TechStach = () => {
 
   return (
     <section id="Skills" className="py-20 px-4 relative overflow-hidden">
-      {/* Animated Background */}
+      {/* Simplified Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-500/5 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -134,7 +133,7 @@ const TechStach = () => {
                     <div
                       key={skillIndex}
                       className="flex items-center group-hover:translate-x-2 transition-transform duration-300"
-                      style={{ transitionDelay: `${skillIndex * 100}ms` }}
+                      style={{ transitionDelay: `${skillIndex * 50}ms` }}
                     >
                       <div className={`w-2 h-2 rounded-full ${category.gradient.replace('/20', '/60')} mr-4 group-hover:scale-150 transition-transform duration-300`}></div>
                       <span className=" text-lg font-medium group-hover:text-white transition-colors duration-300">
@@ -157,9 +156,9 @@ const TechStach = () => {
 
         {/* Bottom decoration */}
         <div className="mt-16 flex justify-center space-x-4">
-          <div className="w-3 h-3 rounded-full bg-purple-400/60 animate-bounce"></div>
-          <div className="w-3 h-3 rounded-full bg-teal-400/60 animate-bounce delay-100"></div>
-          <div className="w-3 h-3 rounded-full bg-pink-400/60 animate-bounce delay-200"></div>
+          <div className="w-3 h-3 rounded-full bg-purple-400/60"></div>
+          <div className="w-3 h-3 rounded-full bg-teal-400/60"></div>
+          <div className="w-3 h-3 rounded-full bg-pink-400/60"></div>
         </div>
       </div>
     </section>
